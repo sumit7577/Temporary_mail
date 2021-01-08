@@ -7,5 +7,9 @@
 <h1> Usage </h1>
 <p> This is a short tutorial on how to use disposable mail website.</p>
 <p>Go on Temprorary mail website By clicking here http://disposablemail.pythonanywhere.com. Now u can see Generate Email option just click there</p>
-![](/bg/bg1.jpg)
+<img src="./bg/bg1.jpg"></img>
+<p> After click on Generate Email copy ur username and Domain Go to Inbox Section and Paste ur username and domain<p>
+<img src="./bg/bg2.jpg"></img>
+
+<p> Now u can check all ur mails that u got in ur inbox in ur temproary mail </p>
 
