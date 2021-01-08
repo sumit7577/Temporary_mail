@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+   <link href="{{ url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for("static", filename="bootstrap.css")}}" rel="stylesheet">
+    <link href="{{ url_for("static", filename="_bootswatch.scss")}}" rel="stylesheet">
+    <link href="{{ url_for("static", filename="_variables.scss")}}" rel="stylesheet">
+     <link href="{{ url_for("static", filename="footer.css")}}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Temprory mail</title>
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Temporary Mail Service</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{url_for("home")}}">Home</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            My Account
+          </a>
+          <li class="nav-item">
+          <a class="nav-link" href="{{url_for("inbox")}}">Inbox</a>
+        </li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Login</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<h1 class="container text-center my-3 fw-light">The Free Unlimited <span class="badge bg-secondary">Mail Service</span></h1>
+	<div class="card text-center bg-light text-dark mb-3">
+	  <div class="card-header">
+		<ul class="nav nav-tabs card-header-tabs">
+		  <li class="nav-item">
+			<a class="nav-link active" aria-current="true" href="#">Generate</a>
+		  </li>
+		  </li>
+		</ul>
+	  </div>
+	  </form>
+	  <div class="card-body">
+		<h5 class="card-title">Generate Free Email</h5>
+		<p class="card-text">Forget About spam and Create a safe free Disposable Email instantly without paying single money</p>
+		<div class="input-group mb-3">
+		  <div class="input-group-text">
+			<input class="form-check-input" type="checkbox" value="" aria-label="Checkbox for following text input">
+		  </div>
+		  <input type="text" id="tempmail" placeholder="Amount Of number" class="form-control" aria-label="Text input with checkbox">
+		</div>
+		
+		<div class="card my-2">
+		<div class="card-body" id="showmail">
+  </div>
+</div>
+		<a href="#" id="generate" class="btn btn-primary">Generate Email</a>
+		</form>
+	  </div>
+	</div>
+  </body>
+  <link href="{{ url_for("static",filename="css/footer.css")}}" rel="stylesheet">
+<footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                                <p>Don’t miss any updates of our new free Temprory email website!</p>
+                                <form action="#" class="f_subscribe_two mailchimp" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn btn_get btn_get_two">Subscribe</button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+                       
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Gadget Hacker</h3>
+                                <div class="f_social_icon">
+                                    <a href="#" class="fab fa-facebook"></a>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                    <a href="#" class="fab fa-linkedin"></a>
+                                    <a href="#" class="fab fa-pinterest"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© Gadget Hacker Inc.. 2021 All rights reserved.(sumit kumar)</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <script>
+let amount = document.getElementById("tempmail").value;
+let xhr = new XMLHttpRequest();
+xhr.open("GET","https://www.1secmail.com/api/v1/?action=genRandomMailbox&count=1",true);
+xhr.send()
+xhr.onload = function(){
+    let emails = JSON.parse(this.responseText)
+let getEmail = document.getElementById("generate");
+getEmail.addEventListener("click",attach);
+function attach(){
+    let showEmail = document.getElementById("showmail");
+        showEmail.innerText = emails
+};
+};
+    </script>
+</html>
