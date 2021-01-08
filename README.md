@@ -7,5 +7,5 @@
 <h1> Usage </h1>
 <p> This is a short tutorial on how to use disposable mail website.</p>
 <p>Go on Temprorary mail website By clicking here http://disposablemail.pythonanywhere.com. Now u can see Generate Email option just click there</p>
-![]images.
+![](/bg/bg1.jpg)
 
